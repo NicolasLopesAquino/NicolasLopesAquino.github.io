@@ -40,7 +40,6 @@ function win(userChoice, computerChoice) {
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
   result_div.innerHTML = convertText(userChoice) + " venceu " + convertText(computerChoice) + ". Vc venceu!"
-  document.getElementById(userChoice).classlist.add(".green-glow");
 }
 
 function lose(userChoice, computerChoice) {
@@ -59,7 +58,7 @@ function draw(userChoice, computerChoice) {
 function game(userChoice){
   const computerChoice = getComputerChoice();
   switch (userChoice + computerChoice) {
-    case "rp":
+    case "rs":
     case "pr":
     case "sp":
       win(userChoice, computerChoice);
